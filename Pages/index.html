@@ -4,7 +4,9 @@
 	<title>Feed | ASKfm</title>
 	<link rel="shortcut icon" href="../Navbar_Pictures/ask_logo.png" type="image/png">
     <link rel="stylesheet" href="../Css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../Css/FirstStyleSheet.css">
+    <link rel="stylesheet" href="../Css/FirstStyleSheet.css">
+    <link rel="stylesheet" href="../Css/elements.css">
+    <script src="../Js/my_js.js"></script>
 	</head>
 <!------------------------------------------------------------------------->
     <body >
@@ -96,7 +98,7 @@
                                 <img class="dropImages" src="../Navbar_Pictures/shoutout.png" alt="Shoutout Icon" >
                             </td>
                             <td>   
-                                <a class="fontColor" href="#">Shoutout</a>
+                                <a class="fontColor" href="#" id="popup" onclick="div_show()">Shoutout</a>
                             </td>
                         </tr>
 
@@ -106,7 +108,7 @@
                         <br>
                     
                         <div class="input-group mb-3 inputClass">
-                            <input type="text" class="form-control" placeholder="what, when, why.... ask" aria-label="ask" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" id="inputID"  placeholder="what, when, why.... ask" aria-label="ask" aria-describedby="basic-addon1">
                         </div>
                         
                         <div class="row"> 
@@ -135,11 +137,30 @@
             
         <hr>
             <br><br>
-            
-	</form>
-    
+        </form>
         
-        
+                                    <div id="abc">
+                                        <!-- Popup Div Starts Here -->
+                                        <div id="popupContact">
+                                            <!-- Contact Us Form -->
+                                            <form action="#" id="popForm" method="post" name="form">
+                                                <div class="row">
+                                                        <img class="shoutImg" src="../Navbar_Pictures/shout.png" alt="Closs Button"><div                                  class="fontProb">Shoutout</div>
+                                                        <img class="imgSize" id="close" src="../Navbar_Pictures/cross.png" alt="Closs Button" onclick ="div_hide()">
+                                                </div>
+                                                    <textarea id="msg" name="message" rows="5" placeholder="Ask people nearby...."></textarea>
+                                                <div class="row" id="thirdPart">
+                                                    <div class="thirdPart_1">
+                                                    <input class="" type="checkbox" name="vehicle" value="Bike">  Ask anonymously<br>
+                                                    <input class="" type="checkbox" name="vehicle" value="Bike">  Appear invisible<br>
+                                                    </div>
+                                                    <a href="javascript:%20check_empty()" id="submit"><img class="playButton" src="../Navbar_Pictures/play-button.png" alt="Play-Button Icon" ></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Popup Div Ends Here -->
+                                    </div>
+
         
         
         

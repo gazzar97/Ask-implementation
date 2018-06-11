@@ -3,6 +3,7 @@
     background: #424242;
     height: 30px;
     margin-top: 5px;
+    
 }
 body{
     background: #424242;    
@@ -64,9 +65,9 @@ body{
     
     width: 580px;
     height: 900px;
-    background: #FFFFFF;
+    margin-left: 2px;
+
     
-   margin-left: 10px;
      
 }
 .friendSection{
@@ -80,8 +81,6 @@ body{
     height: 160px;
     background: #212121;
     border-radius: 3.5%;
-    
-    
     
 }
 .fontColor{
@@ -125,4 +124,60 @@ a:hover{
     
     color: white;
     
+}
+.fontProb3{
+    font-weight: bold;
+    color: white;
+}
+.userProfile{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 20px;	
+	left:85%;	
+}
+.divClass{
+     
+	 margin-top: 10px;
+	 margin-left: -300px;	
+	 left:90%;
+     color: #ECEFF1;
+}
+.userNameProb{
+    
+	 margin-top: -5px;
+	 margin-left: 320px;	
+	 left:90%;
+     font-weight: bold;
+}
+
+.atNameProb{
+    
+	 margin-top: -40px;
+	 margin-left: 320px;	
+	 left:90%;
+     font-weight:100;
+}
+.askButton{
+    
+     width: 70px;
+     height: 37px;
+	 margin-top: 10px;
+	 margin-left:50px;	
+	 left:90%;
+     border-color: #424242;
+     background: #424242;
+     border-radius: 45%;
+    
+}
+.arrowClass{
+    
+    width: 10px;
+    height: 10px;    
+}
+.breakLine{
+    color: black;
+    margin-top:5px;
 }

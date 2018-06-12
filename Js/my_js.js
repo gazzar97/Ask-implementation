@@ -50,9 +50,6 @@ function retImg3(){
     
 }
 
-
-
-
 function setImg4(){
     document.getElementById('us4ImgSource').src="../Navbar_Pictures/arrow_white.png";    
 }
@@ -62,6 +59,10 @@ function retImg4(){
     
 }
 
+function changeDiscover(){
+    
+    
+}
 
 
 

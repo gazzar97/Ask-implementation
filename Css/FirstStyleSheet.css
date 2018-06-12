@@ -1,12 +1,13 @@
 .navClass{
     
-    background: #424242;
+    background: #2b3237;
+
     height: 30px;
     margin-top: 5px;
     
 }
 body{
-    background: #424242;    
+    background: #2b3237;    
 }
 .askClass{
     
@@ -122,8 +123,7 @@ body{
 }
 a:hover{
     
-    color: white;
-    
+    color: white;   
 }
 .fontProb3{
     font-weight: bold;
@@ -167,8 +167,8 @@ a:hover{
 	 margin-top: 10px;
 	 margin-left:50px;	
 	 left:90%;
-     border-color: #424242;
-     background: #424242;
+     border-color: #2b3237;
+     background: #2b3237;
      border-radius: 45%;
     
 }
@@ -180,4 +180,20 @@ a:hover{
 .breakLine{
     color: black;
     margin-top:5px;
+}
+.aboutAsk{
+    font-size: 12px;
+    margin-right: 100px;
+    color:#9E9E9E ;
+}
+.socialImg{
+    margin-left: 12px;
+}
+.secondPart{
+    width: 540px;
+    height: 700px;
+    background: white;
+    margin-top: 22px; 
+   border-radius: 1%;
+    
 }

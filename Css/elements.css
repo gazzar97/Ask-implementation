@@ -6,8 +6,8 @@ top:0;
 left:0;
 display:none;
 position:fixed;
-background-color:#313131;
-overflow:auto
+background-color:#000;
+overflow:auto;
 }
 img#close {
 position:absolute;
@@ -102,7 +102,7 @@ top:50%
 }
 .shoutImg{
 	
-	width:25px;
+	width:35px;
 	height:25px;
 	position:fixed;
 	margin-top: -5px;
@@ -120,11 +120,11 @@ top:50%
 .fontProb{
 	
 	color:#757575;
-	font-size:600;
+	font-size:750;
 	font-weight:bold;
 	position:fixed;
-	margin-top: -2px;
-	margin-left: -290px;	
+	margin-top: -5px;
+	margin-left: -285px;	
 	left:50%;	
 	
 	
@@ -140,5 +140,130 @@ top:50%
 	margin-top: -19px;
 	margin-left: -330px;	
 	left:50%;	
+    
+}
+#createPoll{
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#000;
+overflow:auto;
+}
+#popupPoll{
+
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif;
+}
+#pollForm{
+
+height:600px;
+width:670px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:15px;
+font-family:raleway;
+background-color:#fff;
+position:fixed;
+margin-top: -300px;
+margin-left: -360px;
+left:50%;
+top:50%;
+box-shadow: 5px 5px 50px 5px #FF5722;    
+}
+.pollImg{
+    
+    
+	width:42px;
+	height:27px;
+	position:fixed;
+	margin-top: 0px;
+	margin-left: -349px;	
+	left:50%;	 
+}
+.pollProb{
+    
+    
+	color:#757575;
+	font-size:750;
+	font-weight:bold;
+	position:fixed;
+	margin-top: 2px;
+	margin-left: -300px;	
+	left:50%;   
+}
+.closeImga{
+    
+    
+	width:17px;
+	height:17px;
+	margin-top:26px;
+	margin-right:25px;	
+}
+.textArea{
+    margin-top: -240px; 
+    margin-left: -342px;
+}
+.labArea{
+     
+height: 335px;    
+width: 306px;
+background:#e6e6f0 0 50% no-repeat;
+color:#b2b2bb !important;
+margin-top: 180px;
+margin-left: -21px;
+margin-right: 25px;
+    
+}
+.labArea2{
+     
+height: 335px;    
+width: 305px;
+background:#e6e6f0 0 50% no-repeat;
+color:#b2b2bb !important;
+margin-top: 180px;
+margin-left: -19px;
+
+    
+}
+.reAlocate{
+    margin-left: 93px;
+    margin-top: 50px;  
+}
+.vsClass{
+    
+    height: 50px;
+    width: 50px;
+    margin-top: 305px;
+    margin-left: -332px;
+    
+}
+.reFactor{
+    
+    margin-top: 170px;
+    margin-left: 105px;
+    font-size: 21px;     
+}
+.reSize{
+    
+    margin-left: 65px;
+    font-size: 14px;
+    margin-top: 25px;
+    
+    
+    
+}
+.btnG{
+        width: 100px;
+    margin-top: 8px;
+    margin-left: 700px;
+    height: 40px;
+    
     
 }

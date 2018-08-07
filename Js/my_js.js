@@ -19,6 +19,18 @@ document.getElementById('abc').style.display = "none";
 document.getElementById('inputID').style.display = "block";
     
 }
+function div_On(){
+document.getElementById('createPoll').style.display="block";
+document.getElementById('inputID').style.display = "none";
+    
+}
+
+function div_Off(){
+document.getElementById('createPoll').style.display="none";
+document.getElementById('inputID').style.display = "block";
+    
+}
+
 function setImg (){
     document.getElementById('imgSource').src="../Navbar_Pictures/arrow_white.png";    
 }
@@ -59,10 +71,10 @@ function retImg4(){
     
 }
 
-function changeDiscover(){
-    
-    
-}
+
+
+
+
 
 
 

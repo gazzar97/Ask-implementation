@@ -2,6 +2,10 @@
 <html>
     <head>
 	<title>Feed | ASKfm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="shortcut icon" href="../Navbar_Pictures/ask_logo.png" type="image/png">
     <link rel="stylesheet" href="../Css/bootstrap.min.css">
     <link rel="stylesheet" href="../Css/FirstStyleSheet.css">
@@ -15,13 +19,13 @@
 
      <nav class="navClass">
            <a class="" href="index.html"><img  class="imageLogo" src="../Navbar_Pictures/Askfm.png" alt="Ask Icon"></a>
-           <a class="" href="index.html"><img class="imageTabs" src="../Navbar_Pictures/home.png" alt="Home Icon"></a>
-           <a class="" href="question.html"><img class="imageTabs" src="../Navbar_Pictures/information.png" alt="Information Icon"></a>
-           <a class="" href="user.html"><img class="imageTabs" src="../Navbar_Pictures/user.png" alt="User Icon"></a>
-           <a class="" href="friends.html"><img class="imageTabs" src="../Navbar_Pictures/friends.png" alt="Friends Icon"></a>
-           <a class="" href="notification.html"><img class="imageTabs" src="../Navbar_Pictures/notification.png" alt="Notification Icon"></a>
+           <a title="Home" class="" href="index.html"><img class="imageTabs" src="../Navbar_Pictures/home.png" alt="Home Icon"></a>
+           <a title="Question" class="" href="question.html"><img class="imageTabs" src="../Navbar_Pictures/information.png" alt="Information Icon"></a>
+           <a title="Profile" class="" href="user.html"><img class="imageTabs" src="../Navbar_Pictures/user.png" alt="User Icon"></a>
+           <a title="Friends" class="" href="friends.html"><img class="imageTabs" src="../Navbar_Pictures/friends.png" alt="Friends Icon"></a>
+           <a title="Notification" class="" href="notification.html"><img class="imageTabs" src="../Navbar_Pictures/notification.png" alt="Notification Icon"></a>
          <!---------------Seatings Area--------------------------->
-           <a class="dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="imageTabs" src="../Navbar_Pictures/settings.png" alt="Settings Icon"></a>
+           <a title="Settings" class="dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="imageTabs" src="../Navbar_Pictures/settings.png" alt="Settings Icon"></a>
         
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                        <a class="dropdown-item " href="#">Settings</a>
@@ -29,7 +33,7 @@
                  </div>
          
          <!-------Plus Area----------------------->
-           <a class="" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="plus" src="../Navbar_Pictures/plus.png" alt="Plus Icon" ></a>
+           <a title="Select your Activity" class="" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="plus" src="../Navbar_Pictures/plus.png" alt="Plus Icon" ></a>
                 <div class="dropdown-menu" aria-labelledby="NavDropdown">
                     <table>
                         <tr>
@@ -72,13 +76,14 @@
                 
                 <div class="col-md-5  friendSection">
                     
+                    <!--------------------------------------------------------------------------------------->
                     <div class="firstPart">
                     
                         <div>
                              <table>
                         <tr>
                             <td>
-                                <img class="dropImages" src="../Navbar_Pictures/faq.png" alt="Question Icon" >
+                                <img class="dropImages" src="../Navbar_Pictures/question-val.PNG" alt="Question Icon" >
                             </td>
                             <td>   
                                 <a class="fontColor" href="#" style="color: white">Question</a>
@@ -87,16 +92,16 @@
                            <!---------------------------------------->
                         
                             <td>
-                                <img class="dropImages" src="../Navbar_Pictures/heart.png" alt="Heart Icon" >
+                                <img class="dropImages" src="../Navbar_Pictures/create-poll.PNG" alt="Heart Icon" >
                             </td>
                             <td> 
-                                <a class="fontColor " href="#">Photo poll</a>
+                                <a class="fontColor " href="#" id="createPo" onclick="div_On() ">Photo poll</a>
                             </td>
                         
                            <!----------------------------------->
                     
                             <td>
-                                <img class="dropImages" src="../Navbar_Pictures/shoutout.png" alt="Shoutout Icon" >
+                                <img class="dropImages" src="../Navbar_Pictures/realshuot.PNG" alt="Shoutout Icon" >
                             </td>
                             <td>   
                                 <a class="fontColor" href="#" id="popup" onclick="div_show()">Shoutout</a>
@@ -126,6 +131,8 @@
                         
                     </div>
                     
+                    <!------------------------------------------------------------------------------------------------------------->
+                    
                     <div class="secondPart">
                       
                         <div class="row oPart">
@@ -135,7 +142,7 @@
                                 <div id="lineWall" class="lineColor"></div>
                             </div>
                             <div class="col-md-4">
-                                <a  id=discoverID href="#"class="discoverClass"><span style="color: #b2b2bb;">Discover</span></a>
+                                <a href="#"class="discoverClass"><span id=discoverID style="color: #b2b2bb;">Discover</span></a>
                                 <div id="lineDiscover"  class="olineClass"></div>
                             </div>
                         </div>
@@ -144,9 +151,8 @@
                             <div class="row">
                             
                                 <label class="cWords">Also show answers my friends like</label>
-                                <input type="checkbox" class="cBox">
+                                <input class="form-check-input cBox" type="checkbox" value="" id="defaultCheck1">
                                 
-                            
                             </div>
                             
                             
@@ -154,6 +160,253 @@
                         </div>
                         
                         
+                        <!---------Place for Posts ------------------------>
+                        <div class="postArea">
+                        
+                            <div class="row">
+                                <table>
+                                  <tr>
+                                      <td>
+                                <div class="parg">
+                                I'm just asking is it good to follow your sheet from the beginning or should I follow from CF-D ?  
+                                </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td> <img class="userAnswer" src="../Navbar_Pictures/male.png" alt="User Picture"></td>
+                                            <td> <label class="labC">Mahmoud Elgazzar . about 3 hours ago</label></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="ansparg">
+                                ok, it is a good idea
+                                </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                <tr>
+                                    <td>
+                                <div class="btnArea">
+                                    
+                                    <table>
+                                        <tr>
+                                            <td><img class="loveBtn" src="../Navbar_Pictures/loveButton.PNG" alt="Love Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/keepButton.PNG" alt="Keep asking Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/shareButton.PNG" alt="share Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/reaskButton.PNG" alt="reask Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/moreButton.PNG" alt="more Button"></td>
+                                            
+                                        </tr>
+                                    </table>
+                                
+                                    
+                                </div>
+                                    </td>
+                                    </tr>                             
+                                
+                            
+                                </table>
+                            </div>
+                        </div>
+                         <div class="breakK"></div>
+                        
+                        <div class="postArea">
+                        
+                            <div class="row">
+                                <table>
+                                  <tr>
+                                      <td>
+                                <div class="parg">
+                                I'm just asking is it good to follow your sheet from the beginning or should I follow from CF-D ?  
+                                </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td> <img class="userAnswer" src="../Navbar_Pictures/male.png" alt="User Picture"></td>
+                                            <td> <label class="labC">Mahmoud Elgazzar . about 3 hours ago</label></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="ansparg">
+                                ok, it is a good idea
+                                </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                <tr>
+                                    <td>
+                                <div class="btnArea">
+                                    
+                                    <table>
+                                        <tr>
+                                            <td><img class="loveBtn" src="../Navbar_Pictures/loveButton.PNG" alt="Love Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/keepButton.PNG" alt="Keep asking Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/shareButton.PNG" alt="share Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/reaskButton.PNG" alt="reask Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/moreButton.PNG" alt="more Button"></td>
+                                            
+                                        </tr>
+                                    </table>
+                                
+                                    
+                                </div>
+                                    </td>
+                                    </tr>                             
+                                
+                            
+                                </table>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="breakK"></div>
+                        
+                        <div class="postArea">
+                        
+                            <div class="row">
+                                <table>
+                                  <tr>
+                                      <td>
+                                <div class="parg">
+                                I'm just asking is it good to follow your sheet from the beginning or should I follow from CF-D ?  
+                                </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td> <img class="userAnswer" src="../Navbar_Pictures/male.png" alt="User Picture"></td>
+                                            <td> <label class="labC">Mahmoud Elgazzar . about 3 hours ago</label></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="ansparg">
+                                ok, it is a good idea
+                                </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                <tr>
+                                    <td>
+                                <div class="btnArea">
+                                    
+                                    <table>
+                                        <tr>
+                                            <td><img class="loveBtn" src="../Navbar_Pictures/loveButton.PNG" alt="Love Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/keepButton.PNG" alt="Keep asking Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/shareButton.PNG" alt="share Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/reaskButton.PNG" alt="reask Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/moreButton.PNG" alt="more Button"></td>
+                                            
+                                        </tr>
+                                    </table>
+                                
+                                    
+                                </div>
+                                    </td>
+                                    </tr>                             
+                                
+                            
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="breakK"></div>
+                      
+                        <div class="postArea">
+                        
+                            <div class="row">
+                                <table>
+                                  <tr>
+                                      <td>
+                                <div class="parg">
+                                I'm just asking is it good to follow your sheet from the beginning or should I follow from CF-D ?  
+                                </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td> <img class="userAnswer" src="../Navbar_Pictures/male.png" alt="User Picture"></td>
+                                            <td> <label class="labC">Mahmoud Elgazzar . about 3 hours ago</label></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="ansparg">
+                                           ok, it is a good idea
+                                </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                <tr>
+                                    <td>
+                                <div class="btnArea">
+                                    
+                                    <table>
+                                        <tr>
+                                            <td><img class="loveBtn" src="../Navbar_Pictures/loveButton.PNG" alt="Love Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/keepButton.PNG" alt="Keep asking Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/shareButton.PNG" alt="share Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/reaskButton.PNG" alt="reask Button"></td>
+                                            <td><img class="restBtn" src="../Navbar_Pictures/moreButton.PNG" alt="more Button"></td>
+                                            
+                                        </tr>
+                                    </table>
+                                
+                                    
+                                </div>
+                                    </td>
+                                    </tr>                             
+                                
+                            
+                                </table>
+                            </div>
+                        </div>
                         
                         
                         
@@ -289,7 +542,7 @@
         <hr>
             <br><br>
         </form> 
-        <!------------------------PopUp Page----------------------------------------------->
+        <!------------------------Shoutout Pop up Page ----------------------------------------------->
         
                                     <div id="abc">
                                         <!-- Popup Div Starts Here -->
@@ -297,7 +550,7 @@
                                             <!-- Contact Us Form -->
                                             <form action="#" id="popForm" method="post" name="form">
                                                 <div class="row">
-                                                        <img class="shoutImg" src="../Navbar_Pictures/shout.png" alt="Closs Button"><div            class="fontProb">Shoutout</div>
+                                                        <img class="shoutImg" src="../Navbar_Pictures/realshouts.PNG" alt="Closs Button"><div            class="fontProb">Shoutout</div>
                                                         <img class="imgSize" id="close" src="../Navbar_Pictures/cross.png" alt="Closs Button" onclick ="div_hide()">
                                                 </div>
                                                     <textarea id="msg" name="message" rows="5" placeholder="Ask people nearby...."></textarea>
@@ -313,6 +566,95 @@
                                         <!-- Popup Div Ends Here -->
                                     </div>
 
+        <!---------------------------Create Poll Popup Page ------------------------------------------------------------->
+        <label onclick="div_O   f() ">
+        <div id="createPoll">
+        
+            <div id=popupPoll>   
+                
+                <form action="#" id="pollForm" method="post" name="form2">
+                
+                    <div class="row">
+                        <img class="pollImg" src="../Navbar_Pictures/pollPhoto.PNG" alt="Closs Button">
+                        <div class="pollProb">Create Photo Poll</div>
+                      <img class="closeImga" id="close" src="../Navbar_Pictures/cross.png" alt="Closs Button" onclick ="div_Off()">
+                    </div>
+                  
+                    <textarea class="textArea" id="msg" name="message" rows="5" placeholder="What, When, Why..."></textarea> 
+                    
+                    <div class="row">
+                    
+                        <label class="labArea" >
+                        
+                            
+                             <div class="input-group mb-3 abc">
+                                  <div class="input-group-prepend">
+
+                                  </div>
+                                  <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                    <img class="reAlocate" src="../Navbar_Pictures/upPhoto.PNG">
+                                  </div>
+                            </div>
+                            
+                            <h3 class="reFactor">Choice 1</h3>
+                            <div class="reSize">Drag and drop or click to upload your image</div>
+                            
+                            
+                        </label>
+                        
+                        
+                        
+                        <label class="labArea2">
+                        
+                         
+                             <div class="input-group mb-3 abc">
+                                  <div class="input-group-prepend">
+
+                                  </div>
+                                  <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                    <img class="reAlocate" src="../Navbar_Pictures/upPhoto.PNG">
+                                  </div>
+                            </div>
+                            
+                            <h3 class="reFactor">Choice 2</h3>
+                        <div class="reSize">Drag and drop or click to upload your image</div>
+                            
+                            
+                        
+                        </label>
+                        
+                <div> <img class="vsClass" src="../Navbar_Pictures/vsPhoto.PNG" ></div>
+                
+                        
+                    
+                    
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btnG">Submit</button>
+
+                </form>
+              
+            
+            
+            </div>  
+            
+        
+        
+        
+        </div>
+        </label>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -321,6 +663,7 @@
     <script src="../Js/jquery-3.2.1.min.js"></script>
     <script src="../Js/bootstrap.min.js"></script>
     <script src="../Js/JavaScript1.js"></script>
+        
         
         
     </body>
